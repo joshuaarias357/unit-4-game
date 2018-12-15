@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    width: 100%;
+    background-size: 100%;
+    background-image: url("../Images/background2.jpg");
+    background-repeat: no-repeat;
+}
+
+.centertext h1 {
+    font-family: 'Righteous', cursive;
+}
+
+.crystals {
+    height: 50px;
+}
+
+.centertext p, h1 {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    text-align: center !important;
+}
+
+.scorepadding {
+    margin: 10px 0px;
+}
+
+.container {
+    background: white;
+    margin: 80px 5%;
+    padding: 30px 20px 40px;
+}

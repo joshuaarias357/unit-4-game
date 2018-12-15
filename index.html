@@ -3,12 +3,68 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Javascript/javascript.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="Css/styling.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
 </head>
 <body>
-    
+    <div class="container">
+        <div class="centertext">
+            <h1>Crystal Collector</h1>
+        </div>
+        <div class="centertext">
+            <p>Click on the various crystals below to add up your score to match the number shown.
+                <br>
+                There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+                <br>
+                You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                <br>
+                The value of each crystal is hidden from you until you click on it.
+                <br>
+                Each time when the game starts, the game will change the values of each crystal.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="crystals" id="redCrystal" value="red" src="Images/red-crystal.png">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="crystals" id="purpleCrystal" value="purple" src="Images/purple-crystal.png">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="crystals" id="orangeCrystal" value="orange" src="Images/orange-crystal.png">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="crystals" id="greenCrystal" value="green" src="Images/green-crystal.png">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 scorepadding">
+                            <h3>Try to match:</h3>
+                            <div id="numberToMatch">0</div>
+                        </div>
+                        <div class="col-md-6 scorepadding">
+                            <h3>Your Total:</h3>
+                            <div id="yourTotal">0</div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 centertext">
+                <div>
+                    <h3>Wins</h3>
+                </div>
+                <div id="wins">0</div>
+                    <h3>Losses</h3>
+                <div id="losses">0</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
